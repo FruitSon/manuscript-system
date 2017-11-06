@@ -1,0 +1,21 @@
+This application manages journal article submissions.
+
+1. Setup the database using the SQL files included in the SQL directory on a MySQL server you have access to.
+2. Configure main.py in the root directory to use the MySQL database you have setup in step 1.
+3. Run main.py using Python 3.
+
+Commands and arguments are semicolon delimited, to login to editor 105 you would type:
+login; 105e
+
+To login as author 104 type:
+login; 104a
+
+To Login as reviewer 101 type:
+login; 101r
+
+If you are logged in as an author as wish to submit a paper, you would type:
+submit; title; Affiliation; ;RICode; author2; author3; author4; filename
+
+
+All commands listed as part of the System Specifics at http://www.cs.dartmouth.edu/~cs61/Labs/Lab%202/ are in this
+semicolon delimited form.
